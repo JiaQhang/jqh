@@ -1,0 +1,98 @@
+/* 基本样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+    color: #000; /* 设置默认文本颜色为黑色 */
+}
+
+/* 页面背景及动态渐变效果保持不变 */
+body {
+    background: linear-gradient(120deg, #a6c0fe, #f68084, #fccb90, #d57eeb);
+    background-size: 800% 800%;
+    animation: Gradient 15s ease infinite;
+}
+
+/* 页眉样式 */
+header {
+    color: white; /* 页眉文本保持白色以保证对比 */
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* 导航菜单居中对齐 */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white; /* 导航链接保持白色以保证对比 */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* 主容器 */
+.main-container {
+    padding: 100px 20px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+/* 节点和区块样式 */
+section {
+    background: rgba(255, 255, 255, 0.8); /* 透明背景提高可读性 */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    color: #000; /* 黑色文本确保在亮色背景下可读 */
+    text-align: left;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #000; /* 标题使用黑色字体 */
+}
+
+/* 页脚样式 */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white; /* 页脚文本保持白色 */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* 动画效果 */
+@keyframes Gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
